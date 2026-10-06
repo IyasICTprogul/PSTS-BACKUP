@@ -8,146 +8,107 @@
 </head>
 <body class="bg-slate-200">
     <div class="h-[160px] w-100 mt-5 mx-7 bg-gray-800 shadow-xl flex flex-col items-center justify-center gap-2 rounded-t-xl">
-        <h1 class="font-bold uppercase text-[23px] text-white">August 17th competitions</h1>
-        <p class="text-white text-[12px]">Celebrate independence with a victory</p>
+        <h1 class="font-bold uppercase text-[23px] text-white">School Event Registration</h1>
+        <p class="text-white text-[12px]">Information and Communication Technology Program</p>
     </div>
-   <section>
+    <nav>
+        <div class="h-20  mx-7 bg-gray-600 shadow-xl flex justify-center items-center gap-8 rounded-b-xl">
+            <a href="#" class="font-bold text-white">Home</a>
+            <a href="#" class="font-bold text-white">About</a>
+            <a href="#" class="font-bold text-white">Program</a>
+            <a href="#" class="font-bold text-white">Contact</a>
+        </div>
+    </nav>
+
+    <section>
         <div class="mx-7 my-6 w-auto rounded-xl flex flex-row gap-4 bg-white shadow-xl">
              <!-- Forms -->
             <div class="h-auto  mx-7 bg-white shadow-xl flex flex-col gap-4 rounded-xl my-9 border-4">
                 <h2 class="font-bold uppercase text-[23px] text-gray-600 mx-7 my-6">Program Registration</h2> 
 
-                <form class="my-7 mx-5 flex ">
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="name" class="font-bold text-gray-600 mb-2">Name:</label>
-                            </td>
-                            <td>
-                                <input type="text" id="name" name="name" placeholder="ex: John Doe" class="border border-gray-300 rounded-xl mb-2">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Class" class="font-bold text-gray-600 mb-2">Class:</label>
-                            </td>
-                            <td>
-                                <input type="text" id="Class" name="Class" placeholder="ex: 10A" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="gender" class="font-bold text-gray-600 mb-2">Gender:</label>
-                            </td>
-                            <td>
-                                <select id="gender" name="gender" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="event" class="font-bold text-gray-600 mb-2">Event:</label>
-                            </td>
-                            <td>
-                                <select id="event" name="event" class="border border-gray-300 rounded-xl px-2 mb-2">
-                                    <option value="coding">cracker-eating contest</option>
-                                    <option value="robotics">marble race</option>
-                                    <option value="webdev">rubber track</option>
-                                    <option value="ai">water breaking competition</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Registration Date" class="font-bold text-gray-600 mb-2">Registration Date:</label>
-                            </td>
-                            <td>
-                                <input type="date" id="Registration Date" name="Registration Date" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="email" class="font-bold text-gray-600 mb-2">Email:</label>
-                            </td>
-                            <td>
-                                <input type="email" id="email" name="email" placeholder="ex: john.doe@example.com" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="phone" class="font-bold text-gray-600 mb-2">Phone:</label>
-                            </td>
-                            <td>
-                                <input type="tel" id="phone" name="phone" placeholder="ex: +1234567890" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Number of Participants" class="font-bold text-gray-600 mb-2">Number of Participants:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="Number of Participants" name="Number of Participants" placeholder="ex: 5" class="mb-2 border border-gray-300 rounded-xl px-2 py-1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="Additional Information" class="font-bold text-gray-600 mb-2">Additional Information:</label>
-                            </td>
-                            <td>
-                                <textarea id="Additional Information" name="Additional Information" placeholder="ex: Any special requirements or notes..." class="mb-2 border border-gray-300 rounded-xl px-2 py-1"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-xl mt-4 transition shadow-lg  duration-300 hover:-translate-y-2 shadow-[0_0_30px_rgba(59,130,246,0.8)]">Submit</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                <form class="border-4 my-8 rounded-lg animate-[slideup_1s_ease-out] mx-8" action="">
+                <h2 class="ml-5 mt-5 text-[23px] font-bold">Event Registration</h2>
+                <div class="flex flex-col w-auto h-screen">
+                    <label for="Student Name" class="ml-5 mt-5 font-bold">Student's Name</label>
+                    <input type="text" placeholder="Enter Your Full Name" class="border border-gray-200 rounded w-[300px] h-[30px] ml-5 shadow-lg">
+                    
+                    <label for="Class" class="ml-5 mt-5 font-bold">Class</label>
+                    <select name="Class" class="border border-gray-200 rounded w-[300px] h-[30px] ml-5 shadow-lg mb-5">
+                        <option value="X">X</option>
+                        <option value="XI">XI</option>
+                        <option value="XII">XII</option>
+                    </select>
+
+                    <div class="w-auto h-auto ml-5 animate-[slideup_1.2s_ease-out] font-bold">
+                        <label class="font-bold">Gender</label><br>
+                        <input type="radio" name="Male" class="font-bold">Male
+                        <input type="radio" name="Female" class="ml-5 font-bold">Female
+                    </div>
+
+                    <label for="Competition Category" class="ml-5 mt-5 font-bold">Chose Your Competition Category</label>
+                    <select name="Competition Category" class="border border-gray-200 rounded w-[300px] h-[30px] ml-5 shadow-lg mb-5">
+                        <option value="Web Development">Web Development</option>
+                        <option value="IOT Project">IOT Project</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Public Speaking">Public Speaking</option>
+                        <option value="Photography">Photography</option>
+                    </select>
+
+                    <div class="w-auto h-auto ml-5 mb-5 font-bold">
+                        <label>Participation Type</label><br>
+                        <input type="radio" name="Competition-type">Individual
+                        <input type="radio" name="Competition-type" class="ml-5">Team
+                    </div>
+
+                    <label for="TeamName" class="ml-5 font-bold">Team's Name</label>
+                    <input type="text" placeholder="Enter Your Team's Name" class="border border-gray-200 rounded w-[300px] h-[30px] ml-5 mb-5 shadow-lg">
+                    
+                    <label for="TeamName" class="ml-5 font-bold">Contact Number</label>
+                    <input type="number" placeholder="08XXXXXXXX" class="border border-gray-200 rounded w-[300px] h-[30px] ml-5 mb-5 shadow-lg">
+
+                    <label for="TeamName" class="ml-5 font-bold">Project Description</label>
+                    <textarea rows="5" cols="40" class="rounded-lg mx-5 border border-gray-200 shadow-lg mb-5" placeholder="Describe Your Project or Competition Entry..."></textarea>
+                    
+                    <button class="bg-red-800 font-semibold text-white ml-5 rounded-lg mb-5 w-[120px] py-2 animate-bounce duration-[1s,3s]">Register Now</button>
+                
+                </div>
+        </form>
             </div>
 
-            </head>
-</head>
-<tr>
+            <div class="h-auto w-[200p0x] mr-3 bg-white shadow-xl flex flex-col gap-4 rounded-xl my-7 border-4">
+                <table class="m-10">
+                    <thead>
+                        <th class="px-5 py-3 bg-red-800 fond-bold text-white rounded-tl-lg text-center">No</th>
+                        <th class="px-5 bg-red-800 fond-bold text-white text-center">Participant</th>
+                        <th class="px-5 bg-red-800 fond-bold text-white text-center">Class</th>
+                        <th class="px-5 bg-red-800 fond-bold text-white text-center">Category</th>
+                        <th class="px-5 bg-red-800 fond-bold text-white text-center">Team</th>
+                        <th class="px-5 bg-red-800 fond-bold text-white rounded-tr-lg text-center">Status</th>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-100">
+                            <td class="text-center py-3">1</td>
+                            <td class="text-center ">Ahmad Fauzan</td>
+                            <td class="text-center">X</td>
+                            <td class="text-center">Web Development</td>
+                            <td class="text-center">CodeX</td>
+                            <td class="text-center pr-2">Registered</td>
+                        </tr>
+                        <tr class="bg-gray-200">
+                            <td class="text-center py-3 rounded-bl-lg">2</td>
+                            <td class="text-center ">Aisyah Putri</td>
+                            <td class="text-center">XI</td>
+                            <td class="text-center">IoT Project</td>
+                            <td class="text-center">SmartTech</td>
+                            <td class="text-center pr-2 rounded-br-lg">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-</tr>
-<body>
-  <br>
-  <h2>Tabel 1</h2>
 
-  <table class="border">
-    <tr>
-      <th>ID</th>
-      <th>NAMA LENGKAP</th>
-      <th>lomba yang di ikuti</th>
-      <th>partai</th>
-    </tr>
-    <tr>
-      <td>P01</td>
-      <td>muhamad ripat iqbal</td>
-      <td>lomba makan kerupuk</td>
-      <td>partai 21</td>
-    </tr>
-    <tr>
-      <td>P02</td>
-      <td>insan tatak priagung</td>
-      <td>lomba pecah air</td>
-      <td>partai 22</td>
-
-      <tr>
-        <td>P03</td>
-        <td>faril jagad dewanta</td>
-        <td>lomba balap kelereng</td>
-        <td>partai 25</td>
-      </tr>
-      <tr>
-        <td>P04</td>
-        <td>Rendravano</td>
-        <td>lomba estavet karet</td>
-        <td>partai 34</td>
-        </tr>
-        </table>
+        </div>   
+    </section>
     
-        
+</body>
+</html>
